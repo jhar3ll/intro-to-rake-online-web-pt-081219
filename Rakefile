@@ -1,7 +1,3 @@
-task :environment do 
-  require_relative './config/environment'
-end 
-
 namespace :greeting do 
   desc 'puts out "hello from rake"'
   task :hello do 
@@ -12,6 +8,11 @@ namespace :greeting do
   task :hola do 
     puts "hola de Rake!"
   end 
+
+
+task :environment do 
+  require_relative './config/environment'
+end 
 
 namespace :db do 
   desc 'migrate changes to your database'
